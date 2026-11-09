@@ -52,7 +52,7 @@ The user only ever sees the last line.
 ### Claude Code (fully automatic)
 
 ```bash
-git clone https://github.com/<you>/make-no-mistake.git
+git clone https://github.com/deepanshutomar/make-no-mistake.git
 cp -r make-no-mistake/skills/make-no-mistake ~/.claude/skills/
 mkdir -p ~/.claude/hooks
 cp make-no-mistake/hooks/make-no-mistake-stop.sh ~/.claude/hooks/
