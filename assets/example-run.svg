@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200" height="720" viewBox="0 0 1200 720" font-family="DejaVu Sans Mono, monospace" font-size="17">
+<rect width="1200" height="720" rx="14" fill="#141413"/>
+<rect width="1200" height="44" rx="14" fill="#2C2C2A"/><rect y="30" width="1200" height="14" fill="#2C2C2A"/>
+<circle cx="28" cy="22" r="7" fill="#E24B4A"/><circle cx="52" cy="22" r="7" fill="#EF9F27"/><circle cx="76" cy="22" r="7" fill="#639922"/>
+<text x="600" y="28" text-anchor="middle" fill="#888780" font-size="14" font-family="Inter, DejaVu Sans, sans-serif">example: "Re-render this reel with captions, same quality as source"</text>
+<g fill="#D3D1C7">
+<text x="36" y="88" fill="#9FE1CB">INTENT CONTRACT  (frozen before the render existed)</text>
+<text x="36" y="118">Goal: post-ready reel with burned-in captions</text>
+<text x="36" y="146">1. Resolution, fps, pixel format match source</text>
+<text x="36" y="174">2. Bitrate not visibly below source</text>
+<text x="36" y="202">3. Captions spelled right, timed to speech, inside safe area</text>
+<text x="36" y="230">4. Audio present, loudness near -14 LUFS</text>
+<text x="36" y="258">5. Duration equals source cut, no black or frozen frames</text>
+<text x="36" y="286" fill="#888780">Must not: crop, recolour, or change the edit</text>
+<text x="36" y="338" fill="#CECBF6">VERIFIER  round 1</text>
+<text x="36" y="368"><tspan fill="#5DCAA5">PASS</tspan>  1. 1080x1920 @30fps yuv420p  (ffprobe, matches source)</text>
+<text x="36" y="396"><tspan fill="#F09595">FAIL</tspan>  2. 4.1 Mb/s vs source 16.8 Mb/s  (re-encoded at CRF 28)</text>
+<text x="36" y="424"><tspan fill="#F09595">FAIL</tspan>  3. frame 00:12.4: "consistancy" misspelt</text>
+<text x="36" y="452"><tspan fill="#5DCAA5">PASS</tspan>  4. -14.3 LUFS integrated  (ebur128)</text>
+<text x="36" y="480"><tspan fill="#5DCAA5">PASS</tspan>  5. 41.20s = source, blackdetect: none</text>
+<text x="36" y="532" fill="#CECBF6">SILENT FIX  re-encode CRF 16, fix caption, re-check 2 + 3 + 5</text>
+<text x="36" y="562"><tspan fill="#5DCAA5">PASS</tspan>  2. 15.9 Mb/s    <tspan fill="#5DCAA5">PASS</tspan>  3. frame 00:12.4 correct    <tspan fill="#5DCAA5">PASS</tspan>  5. 41.20s</text>
+<line x1="36" y1="600" x2="1164" y2="600" stroke="#444441"/>
+<text x="36" y="640" fill="#888780" font-family="Inter, DejaVu Sans, sans-serif">What the user actually sees:</text>
+<text x="36" y="680" fill="#9FE1CB" font-size="20">✓ make-no-mistake: 5/5 verified (2 fixed silently)</text>
+</g>
+</svg>

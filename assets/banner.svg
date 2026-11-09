@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" font-family="Inter, DejaVu Sans, sans-serif">
+<rect width="1280" height="420" fill="#141413"/>
+<g opacity="0.08" stroke="#E1F5EE" stroke-width="1">
+<path d="M0 105H1280M0 210H1280M0 315H1280M160 0V420M320 0V420M480 0V420M640 0V420M800 0V420M960 0V420M1120 0V420"/>
+</g>
+<text x="96" y="168" font-size="76" font-weight="600" fill="#F5F4EE" letter-spacing="-1.5">make-no-mistake</text>
+<text x="98" y="226" font-size="28" fill="#B4B2A9">An agent skill that tests the work, so you don't have to.</text>
+<g font-size="20" font-family="DejaVu Sans Mono, monospace">
+<rect x="96" y="276" width="420" height="52" rx="26" fill="#04342C" stroke="#1D9E75"/>
+<text x="124" y="309" fill="#9FE1CB">✓ make-no-mistake: 6/6 verified</text>
+<rect x="536" y="276" width="236" height="52" rx="26" fill="#26215C" stroke="#7F77DD"/>
+<text x="562" y="309" fill="#CECBF6">2 fixed silently</text>
+</g>
+<text x="98" y="374" font-size="18" fill="#888780">Claude Code · Claude · Codex · Gemini · Antigravity · ChatGPT · Cursor</text>
+</svg>
